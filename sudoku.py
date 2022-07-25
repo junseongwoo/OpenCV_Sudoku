@@ -15,6 +15,7 @@ def BoxSearch(img):
     contour2, hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
     cv2.drawContours(img, contour2, -1, (0,255,0), 4)
+    
     '''
     # 컨투어 꼭지점 좌표를 작은 파랑색 점(원)으로 표시 ---⑨
     for i in contour2:
